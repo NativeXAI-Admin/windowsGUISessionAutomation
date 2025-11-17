@@ -1,0 +1,44 @@
+# Reddit Automation System - Windows Server Edition
+# Zero keyboard access - Mouse and OSK only
+
+# Core automation libraries
+pyautogui==0.9.54
+pynput==1.7.6
+mouse==0.7.1
+
+# Screenshot and image processing
+Pillow==10.1.0
+opencv-python==4.8.1.78
+pytesseract==0.3.10
+numpy==1.24.3
+
+# Browser automation
+selenium==4.15.2
+webdriver-manager==4.0.1
+
+# OCR for OSK calibration
+easyocr==1.7.0
+
+# State management
+redis==5.0.1
+python-dotenv==1.0.0
+
+# Configuration
+pyyaml==6.0.1
+pydantic==2.5.0
+
+# Scheduling
+schedule==1.2.0
+APScheduler==3.10.4
+
+# LLM integration
+anthropic==0.7.8
+requests==2.31.0
+
+# Logging and monitoring
+loguru==0.7.2
+rich==13.7.0
+
+# Utilities
+python-dateutil==2.8.2
+pytz==2023.3

@@ -1,0 +1,112 @@
+# Reddit Search Keywords - Options Trading Focus
+
+keywords:
+  # Core options strategies
+  - term: "bull put spread"
+    priority: high
+    subreddits:
+      - options
+      - thetagang
+      - wallstreetbets
+    
+  - term: "iron condor"
+    priority: high
+    subreddits:
+      - options
+      - thetagang
+      
+  - term: "covered call"
+    priority: high
+    subreddits:
+      - options
+      - thetagang
+      - investing
+      
+  - term: "cash secured put"
+    priority: medium
+    subreddits:
+      - options
+      - thetagang
+      
+  - term: "wheel strategy"
+    priority: high
+    subreddits:
+      - options
+      - thetagang
+      
+  - term: "vertical spread"
+    priority: medium
+    subreddits:
+      - options
+      
+  - term: "calendar spread"
+    priority: medium
+    subreddits:
+      - options
+      - thetagang
+      
+  - term: "diagonal spread"
+    priority: low
+    subreddits:
+      - options
+      
+  # Options Greeks and concepts
+  - term: "theta decay"
+    priority: high
+    subreddits:
+      - options
+      - thetagang
+      
+  - term: "implied volatility"
+    priority: medium
+    subreddits:
+      - options
+      
+  - term: "delta neutral"
+    priority: medium
+    subreddits:
+      - options
+      
+  # Risk management
+  - term: "options risk management"
+    priority: high
+    subreddits:
+      - options
+      - investing
+      
+  - term: "position sizing options"
+    priority: medium
+    subreddits:
+      - options
+      
+  # Earnings and events
+  - term: "earnings options play"
+    priority: medium
+    subreddits:
+      - options
+      - wallstreetbets
+      
+  # Market conditions
+  - term: "high IV stocks"
+    priority: medium
+    subreddits:
+      - options
+      - thetagang
+      
+  - term: "SPX options"
+    priority: low
+    subreddits:
+      - options
+
+# Engagement settings
+engagement:
+  max_comments_per_day: 20
+  max_upvotes_per_day: 50
+  min_post_score: 5
+  min_comment_length: 50
+  max_comment_length: 200
+  avoid_keywords:
+    - "pump"
+    - "moon"
+    - "yolo"
+    - "to the moon"

@@ -1,0 +1,48 @@
+{
+  "_description": "Reddit UI element coordinates for mouse clicking",
+  "_screen_resolution": "1920x1080",
+  
+  "browser": {
+    "address_bar": [960, 60],
+    "new_tab_button": [1850, 35],
+    "refresh_button": [100, 60]
+  },
+  
+  "reddit": {
+    "search_box": [800, 80],
+    "hot_tab": [400, 180],
+    "new_tab": [480, 180],
+    "top_tab": [560, 180],
+    "rising_tab": [640, 180],
+    
+    "post_region": {
+      "top": 200,
+      "bottom": 900,
+      "left": 50,
+      "right": 1870
+    },
+    
+    "post_elements": {
+      "upvote_offset_x": 30,
+      "upvote_offset_y": 50,
+      "comment_offset_x": 120,
+      "comment_offset_y": 80,
+      "share_offset_x": 220,
+      "share_offset_y": 80
+    },
+    
+    "comment_box": [500, 400],
+    "comment_submit": [700, 500],
+    
+    "load_more_button": [960, 950],
+    "scroll_container": [960, 540]
+  },
+  
+  "osk": {
+    "expected_top": 800,
+    "expected_bottom": 1080,
+    "expected_left": 0,
+    "expected_right": 1000,
+    "exclude_from_screenshots": true
+  }
+}

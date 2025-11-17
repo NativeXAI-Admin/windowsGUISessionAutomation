@@ -1,0 +1,35 @@
+{
+  "_description": "Scroll settings for Reddit navigation (mouse wheel only)",
+  
+  "scroll": {
+    "step_size": 800,
+    "wait_after_scroll": 1.5,
+    "max_scrolls_per_page": 10,
+    "scroll_speed": "medium",
+    
+    "detection": {
+      "end_of_page_threshold": 3,
+      "similarity_threshold": 0.95,
+      "check_interval": 2
+    }
+  },
+  
+  "mouse_wheel": {
+    "scroll_down_clicks": -3,
+    "scroll_up_clicks": 3,
+    "click_interval": 0.1
+  },
+  
+  "reddit_specific": {
+    "infinite_scroll": true,
+    "wait_for_load": 2.0,
+    "posts_per_scroll": 3,
+    "max_posts_to_capture": 30
+  },
+  
+  "recovery": {
+    "scroll_to_top_on_error": true,
+    "max_recovery_attempts": 3,
+    "recovery_scroll_size": 500
+  }
+}

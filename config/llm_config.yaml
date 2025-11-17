@@ -1,0 +1,80 @@
+# Options Edu LLM Configuration
+
+api:
+  endpoint: "https://api.anthropic.com/v1/messages"
+  model: "claude-sonnet-4-5-20250929"
+  max_tokens: 1024
+  temperature: 0.3
+  timeout: 30
+
+analysis:
+  # What the LLM should evaluate
+  criteria:
+    - relevance_to_options_trading
+    - quality_of_discussion
+    - educational_value
+    - community_engagement
+    - accuracy_of_information
+    
+  # Engagement thresholds
+  thresholds:
+    min_confidence_to_upvote: 70
+    min_confidence_to_comment: 80
+    min_confidence_to_share: 90
+    
+  # Response generation
+  response:
+    max_length: 200
+    tone: "helpful and educational"
+    avoid_phrases:
+      - "financial advice"
+      - "guaranteed"
+      - "risk-free"
+      - "easy money"
+    
+# Prompt templates
+prompts:
+  post_analysis: |
+    You are an expert options trader analyzing a Reddit post.
+    
+    Post Screenshot: [IMAGE]
+    
+    Evaluate this post for:
+    1. Relevance to options trading (0-100)
+    2. Quality and accuracy (0-100)
+    3. Educational value (0-100)
+    4. Community engagement potential (0-100)
+    
+    Provide your analysis in JSON format:
+    {
+      "overall_score": <0-100>,
+      "relevance": <0-100>,
+      "quality": <0-100>,
+      "educational_value": <0-100>,
+      "engagement_potential": <0-100>,
+      "action": "upvote" | "comment" | "skip",
+      "comment_text": "<200 chars or null>",
+      "reasoning": "<brief explanation>"
+    }
+    
+  comment_generation: |
+    Generate a helpful, educational comment (max 200 characters) for this Reddit post about options trading.
+    
+    Post Context: {post_summary}
+    
+    Guidelines:
+    - Be helpful and educational
+    - Avoid giving financial advice
+    - Keep under 200 characters
+    - Use simple language (OSK typing limitation)
+    - No special unicode characters
+    
+    Return only the comment text, nothing else.
+
+# Rate limiting
+rate_limits:
+  requests_per_minute: 20
+  requests_per_hour: 500
+  requests_per_day: 5000
+  retry_delay_seconds: 5
+  max_retries: 3
